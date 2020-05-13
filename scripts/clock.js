@@ -36,7 +36,7 @@ function drawClock(secondsElapsed, minutesElapased, hoursElapsed) {
   //Hour hand position calculation and drawing it on the canvas 
   var delta =  Math.trunc(minutesElapased / 12);
   console.log(delta, minutesElapased / 12);
-  var tempHoursDegrees = ((hoursElapsed * 12 * delta * Math.PI) - 270) / 180;
+  var tempHoursDegrees = (((hoursElapsed - 3) * 12 * delta * Math.PI) - 270) / 180;
   var hourHandX = 0 + 150 * Math.cos(tempHoursDegrees);
   var hourHandY = 0 + 150 * Math.sin(tempHoursDegrees);
 
