@@ -1,0 +1,9 @@
+#canvas {
+  margin-left:auto;
+  margin-right:auto;
+  display: block;
+  background-color: lightcoral;
+  width: 500px;
+  height: 500px;
+  border-radius: 250px;
+}
